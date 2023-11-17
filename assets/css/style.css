@@ -263,11 +263,14 @@ h6 {
 
 
 @media (max-width: 575px) {
-
   .navbar .getstarted,
   .navbar .getstarted:focus {
     display: inline-block;
     margin-left: 4%;
+  }
+
+  .bx-x {
+    color: white;
   }
 }
 
@@ -410,7 +413,7 @@ section {
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
-    margin: auto;
+    margin: 8% auto auto;
   }
 
   #hero h1 {
@@ -463,8 +466,7 @@ section {
   .clients img {
     width: 40%;
   }
-}
-
+}  
 
 
 /*--------------------------------------------------------------
