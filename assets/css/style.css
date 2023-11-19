@@ -413,7 +413,7 @@ section {
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
-    margin: 8% auto auto;
+    margin: 10% auto auto;
   }
 
   #hero h1 {
@@ -876,6 +876,93 @@ About section
     width: 100%;
   }
 }
+
+/*--------------------------------------------------------------
+# About.html Section
+--------------------------------------------------------------*/
+#about-page {
+  margin: 5% auto auto;
+}
+
+#about-page .about p {
+  text-align: justify;
+}
+
+
+#about-page .about .col-6 {
+  padding: 1%;
+}
+
+#about-page .about img {
+  width: 100%;
+}
+
+
+@media (max-width: 575px) {
+  #about-page {
+    margin: 10% auto auto;
+  }
+
+  #about-page .about .img-row {
+    margin: 5% auto auto;
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
