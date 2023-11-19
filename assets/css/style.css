@@ -413,7 +413,7 @@ section {
 @media (max-width: 575px) {
   #hero .hero-img img {
     width: 80%;
-    margin: 10% auto auto;
+    margin: 12% auto auto;
   }
 
   #hero h1 {
@@ -449,12 +449,6 @@ section {
   text-align: center;
 }
 
-.clients .col-lg-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .clients img {
   width: 60%;
   height: 60px;
@@ -465,6 +459,7 @@ section {
 @media (max-width: 768px) {
   .clients img {
     width: 40%;
+    margin: 3% auto;
   }
 }  
 
@@ -544,13 +539,12 @@ About section
 --------------------------------------------------------------*/
 .mission,
 .vision {
-  width: 90%;
   margin: auto;
 }
 
 .about-content .content h3 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 32px;
   color: var(--color-secondary);
   font-family: "Poppins", sans-serif;
   margin: 10% auto 5%;
@@ -565,7 +559,6 @@ About section
 .about-content .content p {
   text-align: justify;
   color: var(--color-primary);
-  width: 90%;
   line-height: 2rem;
 }
 
@@ -598,6 +591,78 @@ About section
   }
 }
 
+/*--------------------------------------------------------------
+# Testimonial
+--------------------------------------------------------------*/
+.testimonial .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.testimonial .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.testimonial .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.testimonial .member:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial .member .member-info {
+  padding-left: 30px;
+}
+
+.testimonial .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.testimonial .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.testimonial .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.testimonial .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media (max-width: 575px) {
+
+  .testimonial .member .pic {
+    overflow: hidden;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -909,6 +974,87 @@ About section
   }
 }
 
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #222222;
+  margin: 0 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a i {
+  line-height: 0;
+}
+
+.team .member .social a:hover {
+  color: #3498db;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #222222;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -953,6 +1099,11 @@ About section
     font-size: 14px;
     margin: 0 5px;
   }
+
+  #portfolio-page {
+    margin: 12% auto auto;
+  }
+  
 }
 
 .portfolio .portfolio-wrap {
