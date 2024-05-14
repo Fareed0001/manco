@@ -263,6 +263,7 @@ h6 {
 
 
 @media (max-width: 575px) {
+
   .navbar .getstarted,
   .navbar .getstarted:focus {
     display: inline-block;
@@ -461,7 +462,7 @@ section {
     width: 40%;
     margin: 3% auto;
   }
-}  
+}
 
 
 /*--------------------------------------------------------------
@@ -958,8 +959,42 @@ About section
   padding: 1%;
 }
 
-#about-page .about img {
+.about-img-0 {
   width: 100%;
+  border-radius: 0 24px 0 24px;
+  -webkit-border-radius: 0 24px 0 24px;
+  -moz-border-radius: 0 24px 0 24px;
+  -ms-border-radius: 0 24px 0 24px;
+  -o-border-radius: 0 24px 0 24px;
+}
+
+.about-img-1 {
+  width: 40%;
+  border-radius: 24px 0 24px 0;
+  -webkit-border-radius: 24px 0 24px 0;
+  -moz-border-radius: 24px 0 24px 0;
+  -ms-border-radius: 24px 0 24px 0;
+  -o-border-radius: 24px 0 24px 0;
+  margin: 4% 2% 2% 2%;
+}
+
+.about-img-2 {
+  width: 30%;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  margin: 0 2% 0 0;
+}
+
+.about-img-3 {
+  width: 20%;
+  border-radius: 0 24px 0 24px;
+  -webkit-border-radius: 0 24px 0 24px;
+  -moz-border-radius: 0 24px 0 24px;
+  -ms-border-radius: 0 24px 0 24px;
+  -o-border-radius: 0 24px 0 24px;
 }
 
 
@@ -1028,6 +1063,7 @@ About section
     width: 80%;
   }
 }
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -1075,7 +1111,7 @@ About section
   #portfolio-page {
     margin: 12% auto auto;
   }
-  
+
 }
 
 .portfolio .portfolio-wrap {
